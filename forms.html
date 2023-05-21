@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2c3b8d1be9.js" crossorigin="anonymous"></script>
+    <title>AutoDelar</title>
+</head>
+<body>
+    <div class="header">
+        <h1>AutoDelar</h1>
+        <div id="cart"><i class="fa-solid fa-cart-shopping fa-lg" onclick="cart_icon()"></i>
+        <div id="cart_dropdown">
+          <p id="empty_msg"></p>
+          <button>Till kassan</button>
+        </div>
+        </div>
+    </div>
+    <div class="stick">
+    <div id="navbar" class="navbar">
+        <a href="index.html">Hem</a>
+        <div class="dropdown">
+            <button class="dropbtn">Produkter</button>
+            <div class="dropdown-content">
+                <div class="drop-info">
+                    <h2>Bildelar</h2>
+                </div>   
+                  <div class="row">
+                    <div class="column">
+                      <h3><i class="fa-solid fa-car-on"></i>Eftermontering</h3>
+                      <a href="shop.html">Extraljus</a>
+                      <a href="#">Kjolkits</a>
+                      <a href="#">Diverse</a>
+                    </div>
+                    <div class="column">
+                      <h3><i class="fa-solid fa-gear"></i>Reservdelar</h3>                     
+                      <a href="#">Elektronik</a>
+                      <a href="#">Mekanik</a>
+                      <a href="#">Exteriör</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Information</button>
+            <div class="dropdown-content">
+                <a href="forms.html">Formulär</a>
+                <a href="#">Om oss</a>
+                <a href="#">Tjänster</a>
+              </div>
+        </div>
+        <div class="search-container">
+            <form>
+              <input type="text" placeholder="Sök...">
+            </form>
+          </div>
+    </div>
+    </div>
+    <div class="forms">
+
+        <form>
+            <div class="form-info">
+                <h3>Kontakta oss</h3>
+                <p> Här kan du kontakta oss via formulär.</p>
+            </div>
+            
+            
+            <label>Förnamn</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn...">
+        
+            <label>Efternamn</label>
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn...">
+
+            <label>E-postadress</label>
+            <input type="text" id="mail" name="e-mail" placeholder="Din e-postadress">
+        
+            <label>Meddelande</label>
+            <textarea id="subject" name="subject" placeholder="Skriv här..." style="height:150px;"></textarea>
+
+            <label>
+                <input type="checkbox" name="offer"> Jag vill få nyheter från autodelar.se på min e-post.
+            </label>
+
+        </form>
+        <button class="send-button">Skicka</button>
+
+    </div>
+
+    <footer>
+        <div class="column1">
+          <h3>LÄNKAR</h3>
+          <a href="#"><i class="fa-solid fa-download"></i> Nedladdningar</a>
+          <a href="#"><i class="fa-regular fa-file"></i> Dokument</a>
+          <a href="#"><i class="fa-solid fa-circle-info"></i> Info</a>
+          <a href="#"><i class="fa-solid fa-phone"></i> Kontakt</a>
+          <a href="#"><i class="fa-solid fa-link"></i> Media</a>
+        </div>
+        <div class="column2">
+          <h3>Butiker</h3>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i> Götaland</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i> Svealand</a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i> Norrland</a>
+  
+        
+        </div>
+      </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
